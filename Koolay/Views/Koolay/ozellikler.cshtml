@@ -1,0 +1,521 @@
+﻿@{
+    ViewBag.Title = "ozellikler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--================Banner Area =================-->
+<section class="banner_area">
+    <div class="container">
+        <div class="banner_inner_text" data-scroll-reveal="enter right move 40px over 0.6s after 0.5s">
+            <h2>Özellikler</h2>
+            <!-- <p>See what we do best</p> -->
+            <p>İşlerinizi Kolaylaştıracak Çözümler</p>
+        </div>
+    </div>
+</section>
+<!--================End Banner Area =================-->
+@*<section id="feature" class="feature service_feature">
+    <div class="container">
+        <div id="carikart">
+            <div class="row">
+
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Cari Kart Modülü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Limitsiz cari hesap kartı ve grupları tanımlayarak cari hesap ekstresi, toplu cari rapor ve cari hesap raporu alabilirsiniz.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="stoktakip">
+            <div class="row">
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Stok Takibi Modülü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Sınırsız stok kartı tanımlaması yapılır. Ayrıca barkodsuz ve gramajlı ürünler için otomatik olarak barkod tanımlayabilir ve barkod etiketlerini (tek veya toplu) yazdırabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div id="raporlamasistemi">
+            <div class="row">
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Raporlama Sistemi</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Cari kartların hesap ekstresi, toplu cari raporu vb.<br />
+                            Depo hareketleri, stok listeleri raporu, toplu stok raporu ve stok hareketleri, cari işlemler ile tüm satış, kar-zarar analizi, satış grafiği, çek-senet ve gün sonu raporu alabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faturamodulu">
+            <div class="row">
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Fatura Modülü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <h3 class="title">
+                            Alış, Satış ve İade Faturalarının Düzenlenmesi
+                        </h3>
+                        <p class="description">
+                            Standart ve gramajlı ürün barkod desteği, irsaliye faturalandırma, detaylı alış, satış ve gönderim faturaları, test faturaları
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div id="taksittakip">
+            <div class="row">
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Taksit Takip Modülü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Otomatik taksitlendirme, tahsilat ve ödeme işlemlerini kolaylıkla yapabilir ve detaylı taksit raporu alabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bankatakip">
+            <div class="row">
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Banka Tkip Modülü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Banka hareketlerini girebilme özelliği ile banka hareketlerini detaylı olarak raporlayabilir ve sınırsız banka hesabı tanımlayabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div id="ceksenet">
+            <div class="row">
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Çek-Senet Takibi</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Sınırsız çek-senet tanımlayabilir, çeklerin ödeme/tahsilat durumunu değiştirebilirsiniz. İki tarih arasında detaylı rapor alabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kasatakip">
+            <div class="row">
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Kasa Takip Modülü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Ödemelerinizi ve tahsilatlarınızı kasadan yapabilir ve bankaya aktarabilirsiniz. Kasada kalan bakiyeyi görebilir,
+                            İki tarih arası detaylı rapor alabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        <div id="kullaniciarayuz">
+            <div class="row">
+                <div class="col-lg-6 video-box justify-content-center" style="display:flex">
+                    <img src="~/img/account-tracking.jpg" class="img-fluid" />
+                </div>
+                <div class="col-lg-6  d-flex flex-column justify-content-center about-content">
+                    <div class="section-title">
+                        <h2>Kullanıcı Arayüzü</h2>
+                    </div>
+                    <div class="icon-box">
+                        <p class="description">
+                            Birden fazla bilgisayardan erişim sağlanabilir.
+                            Her kullanıcıyı ekleme, düzenleme, silme ve raporlama işlemlerine göre yetkilendirebilir,
+                            firma ve şube tanımlayabilirsiniz. İnternetin olduğu her yerden bağlanabilirsiniz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>*@
+
+<section class="service_feature">
+    <div class="container" data-scroll-reveal="enter bottom move 40px over 0.6s after 0.5s">
+        <div class="row feature_inner">
+            <div id="carikart" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconCariKart.svg" />
+                    </div>
+                    <h4>CARİ KART MODÜLÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Sınırsız cari hesap kartı ve grup tanımlama</li>
+                        <li><span>✔</span> Cariye stoklu-stoksuz satış</li>
+                        <li><span>✔</span> Cariye kasa'dan ödeme ve tahsilat yapabilme</li>
+                        <li><span>✔</span> Cariyi borçlandırma ve alacaklandırma işlemleri</li>
+                        <li><span>✔</span> Tahsilat ve ödeme makbuzu kesme</li>
+                        <li><span>✔</span> Cari hesap ekstresi,toplu cari raporu ve cari işlem raporu alabilme</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="stoktakip" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconStokTakip.svg" alt="">
+                    </div>
+                    <h4>STOK TAKİBİ MODÜLÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Sınırsız stok kartı tanımlama</li>
+                        <li><span>✔</span> Barkodsuz ürünler için otomatik barkod tanımlama</li>
+                        <li><span>✔</span> Gramajlı ürünleriçin otomatik barkod tanımlama</li>
+                        <li><span>✔</span> Stok grubu ve birimi tanımlama</li>
+                        <li><span>✔</span> Barkod etiketi basma(tekli veya toplu)</li>
+                        <li><span>✔</span> Depolar arası virman</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="raporlamasistemi" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconRaporlamaSistemi.svg" alt="">
+                    </div>
+                    <h4>RAPORLAMA SİSTEMİ</h4>
+                    <ul>
+                        <li><span>✔</span> Cari kartlara ait hesap ekstresi, toplu cari raporu vb.</li>
+                        <li><span>✔</span> Stok, depo hareketleri, stok listeleri raporu vb.</li>
+                        <li><span>✔</span> Satış, kar-zarar analizi, satış grafiği, çek-senet ve gün sonu raporu</li>
+                        <li><span>✔</span> Toplu stok raporu ve stok hareketleri, cari işlem raporu</li>
+                        <li><span>✔</span> Depo hareketleri raporunu alabilme</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="faturamodulu" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconFaturaModulu.svg" alt="">
+                    </div>
+                    <h4>FATURA MODÜLÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Alış, Satış ve İade faturası düzenleme</li>
+                        <li><span>✔</span> Standart ve gramajlı ürün barkod desteği</li>
+                        <li><span>✔</span> İrsaliyeyi fatura dönüştürme</li>
+                        <li><span>✔</span> Detaylı alış, satış ve iade faturası raporlama gönderme</li>
+                        <li><span>✔</span> Faturaları rahatça gönderim kolaylığı</li>
+                        <li><span>✔</span> Fatura makbuz basımı</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="taksittakip" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconTaksitTakip.svg" alt="">
+                    </div>
+                    <h4>TAKSİT TAKİP MODÜLÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Otomatik taksitlendirme</li>
+                        <li><span>✔</span> Vadesi gelen taksitleri ana ekranda uyarma</li>
+                        <li><span>✔</span> Tahsilat ve ödeme işlemlerini kolayca yapabilme</li>
+                        <li><span>✔</span> Detaylı taksit raporu alabilme</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="bankatakip" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconBankaTakip.svg" alt="">
+                    </div>
+                    <h4>BANKA TAKİP MODÜLÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Sınırsız banka hesabı tanımlama</li>
+                        <li><span>✔</span> Banka hareket girişi yapabilme</li>
+                        <li><span>✔</span> Bankadan bankaya veya bankadan kasaya virman yapabilme</li>
+                        <li><span>✔</span> Banka hareketlerini detaylı raporlama</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="ceksenet" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconCekSenet.svg" alt="">
+                    </div>
+                    <h4>ÇEK-SENET TAKİBİ</h4>
+                    <ul>
+                        <li><span>✔</span> Sınırsız çek-senet tanımlama</li>
+                        <li><span>✔</span> Çeklerin ödeme/tahsilat durumunu değiştirme</li>
+                        <li><span>✔</span> İki tarih arası detaylı raporlama</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="kasatakip" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconKasaTakip.svg" alt="">
+                    </div>
+                    <h4>KASA TAKİP MODÜLÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Kasadan ödeme ve tahsilat yapma</li>
+                        <li><span>✔</span> Kasada kalan bakiyeyi görme</li>
+                        <li><span>✔</span> Kasadan bankaya virman yapabilme</li>
+                        <li><span>✔</span> İki tarih arası detaylı raporlama</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="kullaniciarayuz" class="col-lg-4 col-sm-6">
+                <div class="feature_item">
+                    <div class="f_icon">
+                        <img src="~/img/icon/iconKullaniciArayuz.svg" alt="">
+                    </div>
+                    <h4>KULLANICI ARAYÜZÜ</h4>
+                    <ul>
+                        <li><span>✔</span> Birden çok bilgisayardan erişim</li>
+                        <li><span>✔</span> Her kullanıcıyı ekleme, düzenleme, silme ve raporlama işlemlerine göre yetkilendirme</li>
+                        <li><span>✔</span> Firma bilgisi tanımlayabilme</li>
+                        <li><span>✔</span> Şube tanımlama</li>
+                        <li><span>✔</span> İnternetin olduğu her yerde mekandan bağımsız başlanabilme</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Banner Area =================-->
+<!--================Circle Chart Area =================-->
+<section class="circle_chart_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="circle_progress circular style-polygon" data-percentage="94" data-thickness="3"
+                     data-reverse="true" data-empty-fill="transparent" data-start-color="#276b88"
+                     data-end-color="#7acaff">
+                    <div class="circle_progress_inner">
+                        <strong></strong>
+                        <span class="percentage"></span>
+                        <h4>Customer Happiness</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="circle_progress circular style-polygon" data-percentage="83" data-thickness="3"
+                     data-reverse="true" data-empty-fill="transparent" data-start-color="#276b88"
+                     data-end-color="#7acaff">
+                    <div class="circle_progress_inner">
+                        <strong></strong>
+                        <span class="percentage"></span>
+                        <h4>Creativity</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="circle_progress circular style-polygon" data-percentage="80" data-thickness="3"
+                     data-reverse="true" data-empty-fill="transparent" data-start-color="#276b88"
+                     data-end-color="#7acaff">
+                    <div class="circle_progress_inner">
+                        <strong></strong>
+                        <span class="percentage"></span>
+                        <h4>Good luck</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="circle_progress circular style-polygon" data-percentage="95" data-thickness="3"
+                     data-reverse="true" data-empty-fill="transparent" data-start-color="#276b88"
+                     data-end-color="#7acaff">
+                    <div class="circle_progress_inner">
+                        <strong></strong>
+                        <span class="percentage"></span>
+                        <h4>Development</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Circle Chart Area =================-->
+<!--================Service Solution Area =================-->
+<section class="service_solution_area p_100">
+    <div class="container">
+        <div class="row s_solution_inner">
+            <div class="col-lg-6">
+                <div class="s_solution_item">
+                    <div>
+                        <img src="~/img/icon/title-icon-2.png" alt="">
+                        <h2>Sıkça Sorulan Sorular</h2>
+                    </div>
+                    <!-- <p></p> -->
+                    <div id="accordion" role="tablist" class="solution_collaps">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseOne"
+                                       aria-expanded="false" aria-controls="collapseOne">
+                                        Programı ofis dışında istediğim bilgisayarda kullanabilir miyim?
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Evet. Programı internet bağlantısı olan her yerden kullanabilirsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo"
+                                       aria-expanded="false" aria-controls="collapseTwo">
+                                        Aynı anda birden fazla kullanıcı giriş yapabilir mi?
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Evet. Satın aldığınız kullanıcı sayısı kadar aynı anda programa giriş
+                                        yapılabilir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree"
+                                       aria-expanded="false" aria-controls="collapseThree">
+                                        Diğer kullanıcıların girdiği bilgileri görebilir miyim?
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Evet. Tüm kullanıcılar programda ortak çalışabilir. Girilen tüm bilgiler
+                                        programda aynı anda görüntülenir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingFour">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseFour"
+                                       aria-expanded="false" aria-controls="collapseFour">
+                                        Programa girdiğim bilgiler bilgisayarımda mı saklanıyor?
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Program tamamen online olarak merkezi sunucu üzerinden internet tabanlı
+                                        çalışmaktadır. Sizin programa girdiğiniz bilgiler kendi yerel
+                                        bilgisayarınıza değil merkezi sunucuya kaydedilir.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingFive">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseFive"
+                                       aria-expanded="false" aria-controls="collapseFive">
+                                        Bilgisayarım çökse veya virüs bulaşsa verilerim zarar görür mü?
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Hayır. Programdaki bilgilerinize herhangi bir zarar gelmez. Program verileri
+                                        sizin bilgisayarınızda değil merkezi sunucuda tutulmaktadır. Dolayısıyla
+                                        sizin bilgisayarınızdaki sorunlar verilerinizi etkilemez.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingSix">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapseSix"
+                                       aria-expanded="false" aria-controls="collapseSix">
+                                        Kullanıcı sayısını daha sonra yükseltebilir miyim?
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Evet. Örneğin 3 kullanıcılı aldığınız programı daha sonra 5 kullanıcıya
+                                        yükseltebilirsiniz.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Service Solution Area =================-->
+<script src="~/Scripts/js/popper.min.js"></script>    

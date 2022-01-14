@@ -1,0 +1,73 @@
+﻿ @-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+/*! 
+* @package IcoFont 
+* @version 1.0.1 
+* @author IcoFont https://icofont.com 
+* @copyright Copyright (c) 2015 - 2018 IcoFont 
+* @license - https://icofont.com/license/
+*/
+@font-face {
+    font-family: 'icofont';
+    font-weight: 400;
+    font-style: Regular;
+    src: url('../../fonts/icofont.woff2') format('woff2'),url('../../fonts/icofont.woff') format('woff');
+}                                                         
+
+[class*=" icofont-"], [class^=icofont-] {
+    font-family: icofont !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased
+}
+
+.icofont-simple-up:before {
+    content: "\eab9"
+}

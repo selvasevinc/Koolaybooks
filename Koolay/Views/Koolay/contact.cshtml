@@ -1,0 +1,215 @@
+﻿
+@{
+    ViewBag.Title = "contact";
+    Layout = "~/Views/Shared/_LayoutEn.cshtml";
+}
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+        text-decoration: none;
+        outline: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    html, body {
+        height: 90%;
+        color: rgb(2, 66, 119);
+    }
+
+    button {
+        background: rgb(0 170 229);
+        padding: 0 55px;
+        display: flex;
+        line-height: 45px;
+        font-size: 17px;
+        font-weight: 400;
+        border-radius: 50px;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.5);
+        transition: 300ms all;
+    }
+
+    .mySwiper {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+        .swiper-slide h3 {
+            font-size: 25px;
+            font-weight: 400;
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+        }
+
+    .form-container {
+        width: 700px;
+    }
+
+    label {
+        display: block !important;
+    }
+
+    fieldset {
+        padding-bottom: 20px;
+    }
+
+    legend {
+        font-size: 30px;
+        font-weight: 300;
+        padding-bottom: 15px;
+    }
+
+    textarea, input {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        background: transparent;
+        border-bottom: 1px solid #000;
+        color: #000;
+    }
+
+        textarea, input:focus {
+            border-color: #969696;
+        }
+
+    textarea {
+        height: auto;
+        resize: none;
+    }
+
+    .radio input {
+        display: none;
+    }
+
+        .radio input:checked + .text {
+            border: 2px solid cornflowerblue;
+        }
+
+    .radio .text {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        padding: 0 7px;
+        cursor: pointer;
+    }
+
+    .text .key {
+        width: 36px;
+        height: 36px;
+        background: transparent;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    fieldset:valid + button {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .form-container p {
+        color: rgb(75, 103, 128);
+        padding-bottom: 15px;
+    }
+
+    form {
+        background: radial-gradient(circle, rgb(137 224 255) 0%, rgba(255,255,255,1) 44%);
+    }
+</style>
+<!--================Banner Area =================-->
+<section class="banner_area">
+    <div class="container">
+        <div class="banner_inner_text">
+        </div>
+    </div>
+</section>
+<!--=====End Banner=====-->
+<!-- Swiper -->
+<form class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    </div>
+    <script>
+        debugger;
+        function EnableAjax() {
+            $("#ajaxTikla").on("click", function () {
+                console.log("HERE");
+                $.ajax({
+                    url: '/Grand/BeniCagir/',
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data) {
+                        alert("data");
+                    }
+                });
+            });
+        }
+    </script>
+</form>
+
+<template id="slide-template">
+    <div class="swiper-slide">
+        <div class="form-container">
+            <fieldset>
+                <legend>{title}</legend>
+                <p>{span}</p>
+                {field}
+            </fieldset>
+            <input id="ajaxTikla" type="button" value="OK" class="btn next-button">
+        </div>
+    </div>
+</template>
+
+<template id="slide-start-template">
+    <div class="swiper-slide">
+        <fieldset>
+            <h3>Got questions? Want to tell us something? Looking for advice?</h3>
+
+        </fieldset>
+        <button class="next-button">Next</button>
+    </div>
+
+</template>
+
+<template id="slide-end-template">
+    <div class="swiper-slide">
+        <div class="slide-end">
+            <h3>Thank you! We'll be in touch within the next couple of days with an answer for you.</h3>
+        </div>
+    </div>
+
+</template>
+
+
+@*<div data-tf-widget="dAHzUllY" data-tf-opacity="0" style="width:100%;height:700px;"></div>*@
+
+<!--================End Get in Touch Area =================-->
+@*<script src="//embed.typeform.com/next/embed.js"></script>*@
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="~/Scripts/js/form.js"></script>
+<script src="~/Scripts/js/newEn.js"></script>

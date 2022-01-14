@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C06EBEF2-E1CA-40AD-BF3F-1CAF5CB1F851}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Grand</RootNamespace>
+    <AssemblyName>Grand</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\KoolayController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Email.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\api.php" />
+    <Content Include="Assets\css\animate.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\icofont.min.css" />
+    <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\vendors\circle-bar\circle-progress.min.js" />
+    <Content Include="Assets\vendors\circle-bar\plugins.js" />
+    <Content Include="Assets\vendors\counterup\apear.js" />
+    <Content Include="Assets\vendors\counterup\countto.js" />
+    <Content Include="Assets\vendors\counterup\jquery.counterup.min.js" />
+    <Content Include="Assets\vendors\counterup\jquery.waypoints.min.js" />
+    <Content Include="Assets\vendors\isotope\imagesloaded.pkgd.min.js" />
+    <Content Include="Assets\vendors\isotope\isotope.pkgd.min.js" />
+    <Content Include="Assets\vendors\magnify-popup\jquery.magnific-popup.min.js" />
+    <Content Include="Assets\vendors\magnify-popup\magnific-popup.css" />
+    <Content Include="Assets\vendors\owl-carousel\owl.carousel.min.css" />
+    <Content Include="Assets\vendors\owl-carousel\owl.carousel.min.js" />
+    <Content Include="Assets\vendors\php-email-form\validate.js" />
+    <Content Include="Assets\vendors\progress\circle-progress.js" />
+    <Content Include="Assets\vendors\progress\circularprogress.css" />
+    <Content Include="Assets\vendors\progress\circularprogress.jquery.min.js" />
+    <Content Include="Assets\vendors\revolution\assets\coloredbg.png" />
+    <Content Include="Assets\vendors\revolution\assets\gridtile.png" />
+    <Content Include="Assets\vendors\revolution\assets\gridtile_3x3.png" />
+    <Content Include="Assets\vendors\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="Assets\vendors\revolution\assets\gridtile_white.png" />
+    <Content Include="Assets\vendors\revolution\assets\loader.gif" />
+    <Content Include="Assets\vendors\revolution\assets\sources\fb.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\fr.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\ig.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\post.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\revolution_slide1.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\revolution_slide2.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\tw.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\vm.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\wc.png" />
+    <Content Include="Assets\vendors\revolution\assets\sources\yt.png" />
+    <Content Include="Assets\vendors\revolution\assets\svg\index.php" />
+    <Content Include="Assets\vendors\revolution\css\closedhand.cur" />
+    <Content Include="Assets\vendors\revolution\css\index.php" />
+    <Content Include="Assets\vendors\revolution\css\layers.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\ares.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\custom.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\dione.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\erinyen.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\gyges.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\hades.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\hebe.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\hephaistos.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\hermes.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\hesperiden.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\metis.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\persephone.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\uranus.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation-skins\zeus.css" />
+    <Content Include="Assets\vendors\revolution\css\navigation.css" />
+    <Content Include="Assets\vendors\revolution\css\openhand.cur" />
+    <Content Include="Assets\vendors\revolution\css\settings-ver.5.3.1.css" />
+    <Content Include="Assets\vendors\revolution\css\settings.css" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\index.php" />
+    <Content Include="Assets\vendors\revolution\fonts\index.php" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\css\helper.css" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\css\index.php" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\fonts\index.php" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\index.php" />
+    <Content Include="Assets\vendors\revolution\fonts\revicons\index.php" />
+    <Content Include="Assets\vendors\revolution\fonts\revicons\revicons.svg" />
+    <Content Include="Assets\vendors\revolution\index.php" />
+    <Content Include="Assets\vendors\revolution\js\extensions\index.php" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\source\index.php" />
+    <Content Include="Assets\vendors\revolution\js\extensions\source\revolution.extension.actions.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\source\revolution.extension.migration.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\source\revolution.extension.parallax.js" />
+    <Content Include="Assets\vendors\revolution\js\extensions\source\revolution.extension.video.js" />
+    <Content Include="Assets\vendors\revolution\js\index.php" />
+    <Content Include="Assets\vendors\revolution\js\jquery.themepunch.enablelog.js" />
+    <Content Include="Assets\vendors\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Assets\vendors\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Assets\vendors\revolution\js\source\index.php" />
+    <Content Include="Assets\vendors\revolution\js\source\jquery.themepunch.enablelog.js" />
+    <Content Include="Assets\vendors\revolution\js\source\jquery.themepunch.revolution.js" />
+    <Content Include="Assets\vendors\revolution\js\source\jquery.themepunch.tools.min.js" />
+    <Content Include="Assets\vendors\revolution\php\facebook\class-facebook.php" />
+    <Content Include="Assets\vendors\revolution\php\flickr\class-flickr.php" />
+    <Content Include="Assets\vendors\revolution\php\instagram\class-instagram.php" />
+    <Content Include="Assets\vendors\revolution\php\twitter\class-twitter.php" />
+    <Content Include="Assets\vendors\revolution\php\twitter\connection\Application.php" />
+    <Content Include="Assets\vendors\revolution\php\twitter\connection\ConnectionAbstract.php" />
+    <Content Include="Assets\vendors\revolution\php\twitter\connection\User.php" />
+    <Content Include="Assets\vendors\revolution\php\twitter\RestApi.php" />
+    <Content Include="Assets\vendors\revolution\php\vimeo\class-vimeo.php" />
+    <Content Include="Assets\vendors\revolution\php\youtube\class-youtube.php" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\font\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="img\3d-shap-2.png" />
+    <Content Include="img\3d-shap.png" />
+    <Content Include="img\3d-slider-shap-2.png" />
+    <Content Include="img\3d-slider-shap.png" />
+    <Content Include="img\account-tracking.jpg" />
+    <Content Include="img\banner\banner-bg-2.png" />
+    <Content Include="img\banner\banner-bg.png" />
+    <Content Include="img\blog\blog-1.jpg" />
+    <Content Include="img\blog\blog-2.jpg" />
+    <Content Include="img\blog\blog-author.png" />
+    <Content Include="img\blog\how-to-sell-clothing-online.jpg" />
+    <Content Include="img\blog\tips-for-succes-in-e-commerce.jpg" />
+    <Content Include="img\comment\comment-1.png" />
+    <Content Include="img\comment\comment-2.png" />
+    <Content Include="img\eng.png" />
+    <Content Include="img\eticarette_basarili_olmanın_yollari.jpg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\footer-bg-3.jpg" />
+    <Content Include="img\footer-bg.jpg" />
+    <Content Include="img\grandlogo.png" />
+    <Content Include="img\home-slider\koolay-mobil-mockup.png" />
+    <Content Include="img\home-slider\koolay-mobil.png" />
+    <Content Include="img\home-slider\koolay-tablet-mockup.png" />
+    <Content Include="img\home-slider\kooolay-pc.png" />
+    <Content Include="img\home-slider\mobilnew.png" />
+    <Content Include="img\home-slider\sliderbackg-3.jpg" />
+    <Content Include="img\home-slider\sliderbackg.jpg" />
+    <Content Include="img\home-slider\web2.png" />
+    <Content Include="img\icon\iconBankaTakip.svg" />
+    <Content Include="img\icon\iconCariKart.svg" />
+    <Content Include="img\icon\iconCekSenet.svg" />
+    <Content Include="img\icon\iconFaturaModulu.svg" />
+    <Content Include="img\icon\iconGuvenliVeriDepolama.svg" />
+    <Content Include="img\icon\iconKasaTakip.svg" />
+    <Content Include="img\icon\iconKolayKullanim.svg" />
+    <Content Include="img\icon\iconKullaniciArayuz.svg" />
+    <Content Include="img\icon\iconRaporlamaSistemi.svg" />
+    <Content Include="img\icon\iconStokTakip.svg" />
+    <Content Include="img\icon\iconTaksitTakip.svg" />
+    <Content Include="img\icon\iconVipTeknikDestek.svg" />
+    <Content Include="img\icon\quote-icon.png" />
+    <Content Include="img\icon\title-icon-2.png" />
+    <Content Include="img\icon\title-icon.png" />
+    <Content Include="img\icon\video-icon.png" />
+    <Content Include="img\instagram\ins-1.jpg" />
+    <Content Include="img\instagram\ins-2.jpg" />
+    <Content Include="img\instagram\ins-3.jpg" />
+    <Content Include="img\instagram\ins-4.jpg" />
+    <Content Include="img\instagram\ins-5.jpg" />
+    <Content Include="img\instagram\ins-6.jpg" />
+    <Content Include="img\instagram\ins-7.jpg" />
+    <Content Include="img\instagram\ins-8.jpg" />
+    <Content Include="img\instagram\instapost1.jpg" />
+    <Content Include="img\instagram\instapost2.jpg" />
+    <Content Include="img\instagram\instapost3.jpg" />
+    <Content Include="img\instagram\instapost4.jpg" />
+    <Content Include="img\instagram\instapost5.jpg" />
+    <Content Include="img\instagram\instapost6.jpg" />
+    <Content Include="img\instagram\instapost7.jpg" />
+    <Content Include="img\instagram\instapost8.jpg" />
+    <Content Include="img\instagram\right-instagram\r-in-1.jpg" />
+    <Content Include="img\instagram\right-instagram\r-in-2.jpg" />
+    <Content Include="img\instagram\right-instagram\r-in-3.jpg" />
+    <Content Include="img\instagram\right-instagram\r-in-4.jpg" />
+    <Content Include="img\instagram\right-instagram\r-in-5.jpg" />
+    <Content Include="img\instagram\right-instagram\r-in-6.jpg" />
+    <Content Include="img\koolay-ekip-foto.jpg" />
+    <Content Include="img\koolay-logo.png" />
+    <Content Include="img\koolay-mobil-mockup.png" />
+    <Content Include="img\logoGrand.png" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-1.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-10.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-2.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-3.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-4.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-5.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-6.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-7.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-8.jpg" />
+    <Content Include="img\portfolio\ms-portfolio\ms-p-9.jpg" />
+    <Content Include="img\service-bg.jpg" />
+    <Content Include="img\team\people\people-1.jpg" />
+    <Content Include="img\team\people\people-2.jpg" />
+    <Content Include="img\team\people\people-3.jpg" />
+    <Content Include="img\team\people\people-4.jpg" />
+    <Content Include="img\team\people\people-5.jpg" />
+    <Content Include="img\testimonials\testi-1.jpg" />
+    <Content Include="img\testimonials\testi-2.jpg" />
+    <Content Include="img\testimonials\testi-3.jpg" />
+    <Content Include="img\tur.png" />
+    <Content Include="img\world-map.png" />
+    <Content Include="Scripts\jquery.form.min.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\circle-active.js" />
+    <Content Include="Scripts\js\contact.js" />
+    <Content Include="Scripts\js\form.js" />
+    <Content Include="Scripts\js\gmaps.min.js" />
+    <Content Include="Scripts\js\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\js\jquery.form.js" />
+    <Content Include="Scripts\js\jquery.validate.min.js" />
+    <Content Include="Scripts\js\main.js" />
+    <Content Include="Scripts\js\new.js" />
+    <Content Include="Scripts\js\newEn.js" />
+    <Content Include="Scripts\js\popper.min.js" />
+    <Content Include="Scripts\js\scrollreveal.min.js" />
+    <Content Include="Scripts\js\theme.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="img\blog\.DS_Store" />
+    <Content Include="img\home-slider\.DS_Store" />
+    <Content Include="img\icon\.DS_Store" />
+    <Content Include="img\instagram\.DS_Store" />
+    <Content Include="img\instagram\right-instagram\.DS_Store" />
+    <Content Include="img\portfolio\ms-portfolio\.DS_Store" />
+    <Content Include="img\team\people\.DS_Store" />
+    <Content Include="img\testimonials\.DS_Store" />
+    <Content Include="Assets\css\.DS_Store" />
+    <Content Include="Assets\css\style.css.map" />
+    <Content Include="Assets\vendors\.DS_Store" />
+    <Content Include="Assets\vendors\circle-bar\.DS_Store" />
+    <Content Include="Assets\vendors\counterup\.DS_Store" />
+    <Content Include="Assets\vendors\owl-carousel\.DS_Store" />
+    <Content Include="Assets\vendors\progress\.DS_Store" />
+    <Content Include="Assets\vendors\revolution\.DS_Store" />
+    <Content Include="Assets\vendors\revolution\assets\svg\svg.zip" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\vendors\revolution\fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Assets\vendors\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Assets\vendors\revolution\fonts\revicons\revicons.eot" />
+    <Content Include="Assets\vendors\revolution\fonts\revicons\revicons.ttf" />
+    <Content Include="Assets\vendors\revolution\fonts\revicons\revicons.woff" />
+    <Content Include="Assets\vendors\revolution\info.cfg" />
+    <Content Include="fonts\icofont.woff" />
+    <Content Include="fonts\icofont.woff2" />
+    <Content Include="fonts\font\.DS_Store" />
+    <Content Include="fonts\font\fontawesome-webfont.eot" />
+    <Content Include="fonts\font\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font\fontawesome-webfont.woff" />
+    <Content Include="fonts\font\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutEn.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Koolay\index.cshtml" />
+    <Content Include="Views\Koolay\hakkimizda.cshtml" />
+    <Content Include="Views\Koolay\ozellikler.cshtml" />
+    <Content Include="Views\Koolay\blog.cshtml" />
+    <Content Include="Views\Koolay\eticaret.cshtml" />
+    <Content Include="Views\Koolay\internetten_giyim_satisi_nasil_yapilir.cshtml" />
+    <Content Include="Views\Koolay\iletisim.cshtml" />
+    <Content Include="Views\Koolay\home.cshtml" />
+    <Content Include="Views\Koolay\aboutUs.cshtml" />
+    <Content Include="Views\Koolay\features.cshtml" />
+    <Content Include="Views\Koolay\blogEn.cshtml" />
+    <Content Include="Views\Koolay\ecommerce.cshtml" />
+    <Content Include="Views\Koolay\contact.cshtml" />
+    <Content Include="Views\Koolay\online_clothing_sales.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65246</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65246/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
