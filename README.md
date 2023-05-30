@@ -1,2 +1,1 @@
-# Koolaybooks
-http://koolaybooks.com/
+
